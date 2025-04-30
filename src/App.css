@@ -1,0 +1,130 @@
+.App {
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+/* Grid wrapper for 3 cards per row */
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.user-info {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.user-info:hover {
+  transform: translateY(-5px);
+}
+
+.user-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.user-img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #3498db;
+}
+
+.user-data h4,
+.user-data h5,
+.user-data h6,
+.user-data p {
+  margin: 4px 0;
+  color: #333;
+}
+
+.user-data h4 {
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.user-data p {
+  font-size: 14px;
+  color: #555;
+}
+
+.info-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+.info-buttons a{
+  text-decoration: none;
+  align-items: center;
+}
+.delete-btn {
+  align-items: center;
+}
+.profile-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 12px;
+  margin-top: 12px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 13px;
+  color: #3498db;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+}
+.profile-btn:hover{
+  background: #3498db;
+  color: #fff;
+}
+.arrow-btn{
+  font-size: 14px;
+}
+.profile-btn .arrow-btn{
+  margin-left: 5px;
+  color: #3498db;
+  transition: all ease-in 0.3s;
+}
+.profile-btn:hover .arrow-btn{
+  color: #fff;
+}
+.delete-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 12px;
+  margin-top: 12px;
+  border: 1px solid rgb(234, 29, 29);
+  border-radius: 5px;
+  background: transparent;
+  font-size: 13px;
+  color: rgb(234, 29, 29);
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+}
+.delete-btn:hover{
+  background: rgb(190, 16, 16);
+  color: #fff;
+}
+.delete-btn .arrow-btn{
+  margin-left: 5px;
+  color: rgb(234, 29, 29);
+  transition: all ease-in 0.3s;
+}
+.delete-btn:hover .arrow-btn{
+  color: #fff;
+}
